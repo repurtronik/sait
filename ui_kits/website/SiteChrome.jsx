@@ -81,7 +81,7 @@ function Footer() {
       <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
         <div style={{ display: "grid", gridTemplateColumns: "2.2fr 1fr 1fr 1fr 1fr", gap: "40px", marginBottom: "48px" }}>
           <div>
-            <img src="../../assets/logo.png" alt="CORTEX" style={{ height: "46px", width: "auto", filter: "brightness(0) invert(1) opacity(.85)", marginBottom: "16px" }} />
+            <img src="../../assets/logo-white.png" alt="CORTEX" style={{ height: "48px", width: "auto", opacity: 0.9, marginBottom: "16px" }} />
             <p style={{ fontSize: "0.81rem", lineHeight: 1.75, maxWidth: "240px", margin: 0 }}>Profesionālas apsardzes monitoringa sistēmas. Ražošana un atbalsts Latvijā kopš 1992. gada.</p>
             <div style={{ marginTop: "20px", display: "flex", flexDirection: "column", gap: "7px", fontSize: "0.81rem" }}>
               <span>+371 67 505 603</span>

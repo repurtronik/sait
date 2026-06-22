@@ -1,4 +1,4 @@
-/* @ds-bundle: {"format":3,"namespace":"CORTEXDesignSystem_78fec2","components":[{"name":"Badge","sourcePath":"components/core/Badge.jsx"},{"name":"Button","sourcePath":"components/core/Button.jsx"},{"name":"Card","sourcePath":"components/core/Card.jsx"},{"name":"Input","sourcePath":"components/core/Input.jsx"},{"name":"SectionHeading","sourcePath":"components/core/SectionHeading.jsx"},{"name":"Stat","sourcePath":"components/core/Stat.jsx"},{"name":"Tag","sourcePath":"components/core/Tag.jsx"},{"name":"FeatureCard","sourcePath":"components/marketing/FeatureCard.jsx"},{"name":"ProductCard","sourcePath":"components/marketing/ProductCard.jsx"}],"sourceHashes":{"components/core/Badge.jsx":"35bef7cd16f9","components/core/Button.jsx":"0ba1613aaf6e","components/core/Card.jsx":"690dcecee225","components/core/Input.jsx":"5e7eb361e141","components/core/SectionHeading.jsx":"e41e8a173911","components/core/Stat.jsx":"21ca762593e7","components/core/Tag.jsx":"e7f61e33718c","components/marketing/FeatureCard.jsx":"a66917e7970d","components/marketing/ProductCard.jsx":"025b048e36e2","ui_kits/defendex/DefendexApp.jsx":"d1597dbdb490","ui_kits/defendex/android-frame.jsx":"70c8c3059eeb","ui_kits/website/HomePage.jsx":"ff8d44dcee27","ui_kits/website/SiteChrome.jsx":"5fdb9d380861"},"inlinedExternals":[],"unexposedExports":[]} */
+/* @ds-bundle: {"format":3,"namespace":"CORTEXDesignSystem_78fec2","components":[{"name":"Badge","sourcePath":"components/core/Badge.jsx"},{"name":"Button","sourcePath":"components/core/Button.jsx"},{"name":"Card","sourcePath":"components/core/Card.jsx"},{"name":"Input","sourcePath":"components/core/Input.jsx"},{"name":"SectionHeading","sourcePath":"components/core/SectionHeading.jsx"},{"name":"Stat","sourcePath":"components/core/Stat.jsx"},{"name":"Tag","sourcePath":"components/core/Tag.jsx"},{"name":"FeatureCard","sourcePath":"components/marketing/FeatureCard.jsx"},{"name":"ProductCard","sourcePath":"components/marketing/ProductCard.jsx"}],"sourceHashes":{"components/core/Badge.jsx":"35bef7cd16f9","components/core/Button.jsx":"0ba1613aaf6e","components/core/Card.jsx":"690dcecee225","components/core/Input.jsx":"5e7eb361e141","components/core/SectionHeading.jsx":"e41e8a173911","components/core/Stat.jsx":"21ca762593e7","components/core/Tag.jsx":"e7f61e33718c","components/marketing/FeatureCard.jsx":"a66917e7970d","components/marketing/ProductCard.jsx":"025b048e36e2","ui_kits/defendex/DefendexApp.jsx":"d1597dbdb490","ui_kits/defendex/android-frame.jsx":"70c8c3059eeb","ui_kits/website/HomePage.jsx":"ff8d44dcee27","ui_kits/website/SiteChrome.jsx":"472485f35e5d"},"inlinedExternals":[],"unexposedExports":[]} */
 
 (() => {
 
@@ -2350,12 +2350,12 @@ function Footer() {
       marginBottom: "48px"
     }
   }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("img", {
-    src: "../../assets/logo.png",
+    src: "../../assets/logo-white.png",
     alt: "CORTEX",
     style: {
-      height: "46px",
+      height: "48px",
       width: "auto",
-      filter: "brightness(0) invert(1) opacity(.85)",
+      opacity: 0.9,
       marginBottom: "16px"
     }
   }), /*#__PURE__*/React.createElement("p", {
