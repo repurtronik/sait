@@ -1,0 +1,45 @@
+/* ───────────────────────────────────────────────────────────────
+   CORTEX — Typography tokens
+   Display + UI: Outfit. Technical mono details: DM Mono.
+   ─────────────────────────────────────────────────────────────── */
+
+:root {
+  /* ── Families ── */
+  --font-sans: "Outfit", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --font-mono: "DM Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  /* ── Weights ── */
+  --fw-regular:  400; /* @kind font */
+  --fw-medium:   500; /* @kind font */
+  --fw-semibold: 600; /* @kind font */
+  --fw-bold:     700; /* @kind font */
+  --fw-black:    800; /* @kind font */
+
+  /* ── Type scale (rem; root = 16px) ── */
+  --fs-xs:   0.72rem;  /* labels, eyebrows, tags */
+  --fs-sm:   0.82rem;  /* captions, fine print */
+  --fs-base: 0.92rem;  /* body / UI default */
+  --fs-md:   1rem;     /* lead body */
+  --fs-lg:   1.125rem; /* large body */
+  --fs-xl:   1.5rem;   /* small headings */
+  --fs-2xl:  1.875rem; /* H3 */
+  --fs-3xl:  2.5rem;   /* H2 / section titles */
+  --fs-4xl:  3.2rem;   /* H1 / hero (use clamp in practice) */
+
+  /* ── Line heights ── */
+  --lh-tight:   1.08; /* @kind font */
+  --lh-snug:    1.2;  /* @kind font */
+  --lh-normal:  1.6;  /* @kind font */
+  --lh-relaxed: 1.75; /* @kind font */
+
+  /* ── Letter spacing ── */
+  --ls-display: -0.03em; /* @kind font */
+  --ls-tight:   -0.02em; /* @kind font */
+  --ls-normal:  0;        /* @kind font */
+  --ls-label:   0.12em;   /* @kind font */
+  --ls-caps:    0.08em;   /* @kind font */
+
+  /* ── Fluid display sizes ── */
+  --fs-hero:    clamp(2.2rem, 4.5vw, 3.8rem); /* @kind font */
+  --fs-section: clamp(1.8rem, 3vw, 2.5rem); /* @kind font */
+}

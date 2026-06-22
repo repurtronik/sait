@@ -1,0 +1,55 @@
+/* ───────────────────────────────────────────────────────────────
+   CORTEX — Spacing, radius, shadow, motion, z-index
+   8-pt based scale used across the site.
+   ─────────────────────────────────────────────────────────────── */
+
+:root {
+  /* ── Spacing scale ── */
+  --sp-xs:  4px;
+  --sp-sm:  8px;
+  --sp-md:  16px;
+  --sp-lg:  24px;
+  --sp-xl:  32px;
+  --sp-2xl: 48px;
+  --sp-3xl: 64px;
+  --sp-4xl: 84px;   /* section vertical rhythm */
+
+  /* ── Layout ── */
+  --container-max: 1280px; /* @kind spacing */
+  --section-pad-x: 48px;   /* @kind spacing */
+  --section-pad-y: 84px;   /* @kind spacing */
+
+  /* ── Border radius ── */
+  --r-sm:   4px;
+  --r-md:   8px;    /* buttons, inputs */
+  --r-lg:   12px;   /* cards, dropdowns */
+  --r-xl:   16px;   /* feature cards, hero mock */
+  --r-2xl:  22px;   /* phone frames */
+  --r-full: 9999px; /* pills, badges */
+
+  /* ── Borders ── */
+  --bw-hair: 1px;    /* @kind spacing */
+  --bw-card: 1.5px;  /* @kind spacing */
+  --bw-accent: 3px;  /* @kind spacing */
+
+  /* ── Shadows (cool navy-tinted) ── */
+  --shadow-sm: 0 1px 2px rgba(15,45,82,0.06);
+  --shadow-md: 0 2px 16px rgba(15,45,82,0.12);
+  --shadow-lg: 0 12px 32px rgba(21,101,192,0.13);
+  --shadow-xl: 0 20px 56px rgba(21,101,192,0.22);
+  --shadow-cyan: 0 8px 24px rgba(0,180,216,0.40); /* cyan CTA hover glow */
+
+  /* ── Motion ── */
+  --ease: ease-in-out;           /* @kind other */
+  --t-fast: 150ms ease-in-out;   /* @kind other */
+  --t-base: 250ms ease-in-out;   /* @kind other */
+  --t-slow: 350ms ease-in-out;   /* @kind other */
+  --lift: translateY(-2px);      /* @kind other */
+  --lift-card: translateY(-4px); /* @kind other */
+
+  /* ── Z-index scale ── */
+  --z-sticky:   200; /* @kind other */
+  --z-dropdown: 300; /* @kind other */
+  --z-modal:    400; /* @kind other */
+  --z-toast:    500; /* @kind other */
+}

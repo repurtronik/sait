@@ -1,0 +1,17 @@
+<!-- @dsCard group="Colors" viewport="700x170" name="Dark surfaces & gradients" subtitle="ink · navy gradients used on hero/footer" -->
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body{margin:0;font-family:var(--font-sans);background:#fff;padding:18px}
+  .row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  .sw{height:110px;border-radius:12px;display:flex;flex-direction:column;justify-content:flex-end;padding:14px;color:#fff;position:relative;overflow:hidden}
+  .sw::after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);background-size:26px 26px}
+  .n{font-size:.78rem;font-weight:700;position:relative;z-index:1}
+  .h{font-size:.64rem;color:rgba(255,255,255,.55);margin-top:2px;position:relative;z-index:1}
+</style></head>
+<body><div class="row">
+  <div class="sw" style="background:var(--cx-grad-hero)"><span class="n">Hero gradient</span><span class="h">grad-hero · 150°</span></div>
+  <div class="sw" style="background:var(--cx-grad-cta)"><span class="n">CTA gradient</span><span class="h">grad-cta · 130°</span></div>
+  <div class="sw" style="background:var(--cx-ink)"><span class="n">Footer ink</span><span class="h">#05091A</span></div>
+</div></body></html>

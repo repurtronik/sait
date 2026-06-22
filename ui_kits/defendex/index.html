@@ -1,0 +1,56 @@
+<!-- @dsCard group="Defendex App" viewport="460x900" name="Defendex 2.0 — Mobile app" subtitle="Login · Event archive · Settings (click-through)" -->
+<!-- @startingPoint section="Defendex App" subtitle="CORTEX Defendex mobile app" viewport="460x900" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Defendex 2.0 — CORTEX</title>
+<link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<style>
+  body { margin: 0; font-family: var(--font-sans); background: #e8eef5; display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 32px; box-sizing: border-box; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel" src="android-frame.jsx" data-presets="react"></script>
+<script type="text/babel" src="DefendexApp.jsx" data-presets="react"></script>
+<script type="text/babel" data-presets="react">
+function App() {
+  const [screen, setScreen] = React.useState("login");
+  const [toast, setToast] = React.useState(false);
+  React.useEffect(() => { if (window.lucide) window.lucide.createIcons(); });
+
+  const showToast = () => { setToast(true); setTimeout(() => setToast(false), 2200); };
+
+  let content;
+  if (screen === "login") content = <LoginScreen onSignIn={() => setScreen("archive")} onSettings={() => setScreen("settings")} />;
+  else if (screen === "archive") content = <EventArchive onBack={() => setScreen("login")} onRefresh={() => {}} />;
+  else content = <SettingsScreen onBack={() => setScreen(screen === "settings" ? "login" : "archive")} toast={showToast} />;
+
+  return (
+    <div style={{ position: "relative" }}>
+      <AndroidDevice width={440} height={900}>
+        {content}
+        {screen === "archive" && (
+          <button onClick={() => setScreen("settings")} style={{ position: "absolute", right: 20, bottom: 64, width: 56, height: 56, borderRadius: 18, border: "none", cursor: "pointer", background: DFX.grad, boxShadow: "0 10px 24px rgba(33,150,243,.4)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <i data-lucide="settings" style={{ width: 24, height: 24, color: "#fff" }}></i>
+          </button>
+        )}
+      </AndroidDevice>
+      {toast && (
+        <div style={{ position: "absolute", left: "50%", bottom: 90, transform: "translateX(-50%)", background: DFX.primaryDark, color: "#fff", padding: "12px 22px", borderRadius: 10, fontSize: 14.5, fontWeight: 600, whiteSpace: "nowrap", boxShadow: "0 8px 24px rgba(0,0,0,.25)" }}>
+          Settings saved
+        </div>
+      )}
+    </div>
+  );
+}
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+</script>
+</body>
+</html>

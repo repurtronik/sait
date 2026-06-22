@@ -1,0 +1,66 @@
+/* ───────────────────────────────────────────────────────────────
+   CORTEX — Color tokens
+   A cool, technical palette: deep navy authority + electric cyan
+   energy. Lifted directly from the cortex.eu stylesheet.
+   ─────────────────────────────────────────────────────────────── */
+
+:root {
+  /* ── Brand / primary scale (blue) ── */
+  --cx-navy: #0F2D52;   /* primary brand, headings, dark surfaces */
+  --cx-blue: #1565C0;   /* secondary blue, links on light */
+  --cx-sky:  #2196F3;   /* interactive accent, section labels, focus */
+  --cx-cyan: #00B4D8;   /* signature accent — CTAs, highlights */
+  --cx-cyan-hover: #00C8F0; /* cyan hover state */
+
+  /* ── Accent / logo ── */
+  --cx-green: #1FA637;  /* logo dot — sparingly, "operational" */
+
+  /* ── Semantic / status ── */
+  --cx-success: #2E7D32;
+  --cx-warning: #D97706;
+  --cx-danger:  #DC2626;
+  --cx-info:    #2196F3;
+
+  /* ── Neutrals — light side ── */
+  --cx-white: #FFFFFF;
+  --cx-frost: #F0F8FF;  /* app background (very pale blue) */
+  --cx-ice:   #E3F2FD;  /* tinted surface / hover fill */
+  --cx-bd:    #BBDEFB;  /* border (stronger) */
+  --cx-bd2:   #E1F0FB;  /* border (hairline) */
+
+  /* ── Text ── */
+  --cx-tx: #1A1A2E;     /* primary text (near-black indigo) */
+  --cx-tm: #546E7A;     /* muted / secondary text (slate) */
+
+  /* ── Dark surfaces (hero, footer, tech sections) ── */
+  --cx-ink:        #05091A; /* footer black */
+  --cx-ink-2:      #060F1C;
+  --cx-navy-deep:  #081828; /* hero gradient start */
+  --cx-navy-2:     #0D3D6E; /* hero gradient end */
+  --cx-topbar:     #0A1E38; /* topbar bar */
+
+  /* ── On-dark text ── */
+  --cx-on-dark:       rgba(255,255,255,0.92);
+  --cx-on-dark-muted: rgba(255,255,255,0.60);
+  --cx-on-dark-faint: rgba(255,255,255,0.42);
+  --cx-cyan-soft:     #67E8F9; /* cyan text on dark */
+
+  /* ── Hero / overlay gradients ── */
+  --cx-grad-hero: linear-gradient(150deg, #081828 0%, #0F2D52 55%, #0D3D6E 100%); /* @kind color */
+  --cx-grad-cta:  linear-gradient(130deg, #0A1F3D, #0F2D52); /* @kind color */
+  --cx-grad-cyan: linear-gradient(90deg, #2196F3, #00B4D8); /* @kind color */
+
+  /* ── Semantic aliases (consume these in components) ── */
+  --surface-page:   var(--cx-frost);
+  --surface-card:   var(--cx-white);
+  --surface-tinted: var(--cx-ice);
+  --surface-dark:   var(--cx-navy);
+  --border-hair:    var(--cx-bd2);
+  --border-strong:  var(--cx-bd);
+  --text-strong:    var(--cx-tx);
+  --text-muted:     var(--cx-tm);
+  --text-link:      var(--cx-sky);
+  --accent:         var(--cx-cyan);
+  --accent-ink:     var(--cx-navy);
+  --focus-ring:     rgba(33,150,243,0.18);
+}

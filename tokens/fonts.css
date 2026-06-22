@@ -1,0 +1,8 @@
+/* ───────────────────────────────────────────────────────────────
+   CORTEX — Web fonts
+   Outfit  → display + UI sans (400–800)
+   DM Mono → technical / monospace details (400, 500)
+   These are the exact families used across cortex.eu.
+   ─────────────────────────────────────────────────────────────── */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap');
